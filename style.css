@@ -36,7 +36,7 @@ body{
     display: block; /* Elimina espacios extra alrededor de la imagen */
 }
 
-#lista-nav{
+#lista-nav{ 
     margin: 0;
     margin-left: auto;
     padding: 0;
@@ -196,7 +196,7 @@ body{
 }
 
 .list-container{
-    margin: 40px 200px 20px 200px;
+    margin: 40px 150px 20px 150px;
     border-radius: 15px 15px 10px 10px;
     background-color: white;
 }
@@ -228,6 +228,7 @@ body{
     border-radius: 20px;
     width: 30%;
     font-size: 50px;
+    padding: 10px;
 
     background: rgb(9,19,62);
     background: -moz-radial-gradient(circle, rgba(9,19,62,1) 27%, rgb(12, 3, 45) 73%);
@@ -237,29 +238,102 @@ body{
 
 }
 
-.item-card{
+.card-container{
+    width: 100%;
+    margin-top: 10px;
     display: flex;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.baggy-jeans{
-    object-fit: contain;
+.item-card{
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    margin:0 7px 0 7px;
+}
+
+.item-card:hover{
+    box-shadow: 0px 0px 5px rgb(97, 97, 97);
+    transition: 0.2s;
+    transform: scale(1.001);
+}
+
+.item-card{
+    justify-items: center;
+    margin-top: 10px;
+    height: auto;
+}
+
+.item-img-box{
+    width: auto;
+    height: auto;
+    padding-top: 15px;
+    
+}
+
+.item-img{
     max-width: 100%;
-    width: 500px;
-    margin-bottom: 10px;
-    margin-left: 50px;
+    width: fit-content;
+    height: 300px;    
 }
 
 .item-parraph{
-    font-weight: bolder;
-    font-size: 50px;
+    width: fit-content;
+    font-weight: bold;
     text-align: center;
-    width: 40%;
-    align-content: center;
 }
 
-.item-url{
-    color: blue;
-    font-size: 30px;
-    align-content: center; 
+.item-price{
+    margin-top: 5px;
+}
+
+.item-button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: aquamarine;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.item-hyper{
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+#cinturon-margin{
+    margin-top: 25px;
+}
+
+#equipacion-margin{
+    margin-top: 25px;
+}
+
+#acid-tee{
+    width: 270px;
+}
+
+.aparatos-header-container{
+    justify-items: center;
+    width: 100%;
+}
+
+.aparatos-header{
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    width: 60%;
+    font-size: 50px;
+    margin-top: 20px;
+    padding: 10px;
+
+    background: rgb(9,19,62);
+    background: -moz-radial-gradient(circle, rgba(9,19,62,1) 27%, rgb(12, 3, 45) 73%);
+    background: -webkit-radial-gradient(circle, rgba(9,19,62,1) 27%, rgb(12, 3, 45) 73%);
+    background: radial-gradient(circle, rgba(9,19,62,1) 27%, rgb(12, 3, 45) 73%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#09133e",endColorstr="#020521",GradientType=1);
 }
