@@ -46,9 +46,17 @@ body{
 }
 
 .elementos-nav{
-    padding: 20px;
     text-align: center;
+    
+}
+.elementos-nav a{
+    
+    padding: 20px;
     display: block;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
 }
 
 .info-container{
@@ -348,4 +356,114 @@ body{
 
 .datos{
     margin-right: 50px ;
+}
+
+.a-banco-link {
+    display: inline-block; /* Ajusta el tamaño del enlace al contenido */
+    width: fit-content; /* El ancho del enlace se ajusta al tamaño del contenido */
+    height: fit-content; /* Lo mismo aplica para la altura */
+    margin: 0;
+    padding: 0;
+}
+
+.banco-img {
+    max-width: 100%; /* Asegura que la imagen sea responsiva */
+    width: 120px; /* Permite que la imagen mantenga su tamaño natural */
+    height: auto; /* Ajusta la altura según las proporciones */
+    display: block; /* Elimina espacios extra alrededor de la imagen */
+}
+
+.banco-img:hover {
+    transition: 1s;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #3f4eff;
+}
+
+.contacto-container{
+    background-color: #000661;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 40px 0 40px 0;
+}
+
+
+.contacto-ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 100px;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Asegurar un diseño en columna */
+    }
+
+    .nav {
+        flex-direction: row;
+        height: auto; /* Ajustar la altura automáticamente */
+        text-align: center;
+        
+    }
+
+    #lista-nav {
+        flex-direction: row; /* Cambiar la disposición a vertical */
+        font-size: 16px; /* Reducir el tamaño del texto */
+        
+    }
+
+    .info-container {
+        margin: 20px 10px; /* Reducir márgenes */
+        height: auto; /* Permitir ajuste dinámico */
+        display: none;
+    }
+
+    .info-header, .info-parraph {
+        width: 100%; /* Usar todo el ancho */
+        height: auto; /* Ajustar dinámicamente */
+        font-size: 20px; /* Reducir el tamaño del texto */
+        text-align: center; /* Centrar contenido */
+    }
+
+    .tecnologies {
+        flex-direction: column; /* Cambiar a disposición en columna */
+        gap: 10px; /* Agregar separación */
+        display: none;
+    }
+
+    .card-container {
+        flex-direction: column; /* Apilar las tarjetas verticalmente */
+        gap: 15px; /* Espaciado entre tarjetas */
+    }
+
+    .item-card {
+        width: 90%; /* Reducir el ancho para caber en la pantalla */
+        margin: 0 auto; /* Centrar las tarjetas */
+    }
+
+    .aparatos-header, .ropa-header, .donaciones-header {
+        width: 90%; /* Ajustar al ancho del dispositivo */
+        font-size: 25px; /* Reducir tamaño del texto */
+    }
+
+    .contacto-ul {
+        flex-direction: column; /* Disponer los elementos verticalmente */
+        gap: 20px; /* Espaciado entre elementos */
+    }
+
+    .list-container {
+        margin: 20px 10px; /* Reducir márgenes */
+    }
+
+    .list-header {
+        font-size: 30px; /* Reducir tamaño del texto */
+    }
 }
